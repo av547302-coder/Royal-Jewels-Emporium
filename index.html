@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Royal Jewels Emporium | Luxury Jewellery Jaipur</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Royal Jewels Emporium - Luxury bridal, Polki, diamond and gold jewellery in Johri Bazar, Jaipur. Enquire on WhatsApp for prices and custom designs."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <img src="assets/logo.png" alt="Royal Jewels Emporium" />
+        <span>Royal Jewels Emporium</span>
+      </a>
+      <nav class="nav">
+        <a href="#collections">Collections</a>
+        <a href="#custom">Custom Jewellery</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="nav-cta">WhatsApp Inquiry</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">Johri Bazar · Jaipur</p>
+        <h1>Handcrafted Luxury Jewellery for Royal Moments.</h1>
+        <p class="hero-subtitle">
+          Bridal, Polki, diamond and gold masterpieces crafted in Jaipur, designed for weddings,
+          NRIs and luxury buyers who want something truly special.
+        </p>
+        <div class="hero-actions">
+          <a href="#collections" class="btn primary">View Collections</a>
+          <a href="#" class="btn ghost" onclick="openDirectWhatsApp(); return false;">
+            WhatsApp Now
+          </a>
+        </div>
+        <div class="hero-highlights">
+          <div>
+            <span class="stat">30+ yrs</span>
+            <span class="stat-label">Jewellery Legacy</span>
+          </div>
+          <div>
+            <span class="stat">Bridal</span>
+            <span class="stat-label">Polki & Diamond</span>
+          </div>
+          <div>
+            <span class="stat">NRI</span>
+            <span class="stat-label">Consultation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-3d-placeholder">
+          <p class="placeholder-label">Signature Bridal Set</p>
+          <div class="placeholder-box">
+            <p>Use a high-quality bridal jewellery image here (e.g. assets/hero.jpg).</p>
+          </div>
+          <p class="placeholder-note">
+            This can later be replaced with a hero slider or video of your collection.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section section-alt">
+    <div class="container two-col">
+      <div>
+        <h2>About Royal Jewels Emporium</h2>
+        <p>
+          Located in the heart of Johri Bazar, Jaipur, Royal Jewels Emporium is known for
+          handcrafted bridal, Polki, Kundan, diamond and gold jewellery with timeless designs and
+          unmatched craftsmanship.
+        </p>
+        <p>
+          From intimate weddings to grand royal celebrations, we design pieces that tell your story
+          and become family heirlooms for generations.
+        </p>
+      </div>
+      <div class="about-cards">
+        <div class="about-card">
+          <h3>Jaipur Craftsmanship</h3>
+          <p>Traditional Rajasthani techniques with modern luxury aesthetics.</p>
+        </div>
+        <div class="about-card">
+          <h3>Custom Bridal Sets</h3>
+          <p>Fully customisable bridal jewellery curated as per your outfit and theme.</p>
+        </div>
+        <div class="about-card">
+          <h3>NRI Friendly</h3>
+          <p>Virtual consultations, video showcase and secure shipping for NRI clients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTIONS -->
+  <section id="collections" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Signature Collections</h2>
+        <p>
+          Explore our curated collections for brides, families and jewellery connoisseurs.
+        </p>
+      </div>
+
+      <div class="collection-grid">
+        <!-- Collection 1 -->
+        <article class="collection-card">
+          <img src="assets/collection-bridal.jpg" alt="Bridal Polki Collection" />
+          <div class="collection-content">
+            <h3>Bridal Polki Collection</h3>
+            <p>Statement Polki sets with matching maang tikka, earrings and haathphool.</p>
+            <button
+              class="btn tiny primary"
+              onclick="openProductInquiry('Bridal Polki Collection')"
+            >
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <!-- Collection 2 -->
+        <article class="collection-card">
+          <img src="assets/collection-diamond.jpg" alt="Diamond Elegance Collection" />
+          <div class="collection-content">
+            <h3>Diamond Elegance</h3>
+            <p>Minimal yet luxurious diamond necklaces, solitaires and cocktail rings.</p>
+            <button
+              class="btn tiny primary"
+              onclick="openProductInquiry('Diamond Elegance Collection')"
+            >
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <!-- Collection 3 -->
+        <article class="collection-card">
+          <img src="assets/collection-temple.jpg" alt="Temple Heritage Collection" />
+          <div class="collection-content">
+            <h3>Temple Heritage</h3>
+            <p>South-Indian inspired gold jewellery with traditional motifs and deities.</p>
+            <button
+              class="btn tiny primary"
+              onclick="openProductInquiry('Temple Heritage Collection')"
+            >
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUSTOM JEWELLERY -->
+  <section id="custom" class="section section-alt">
+    <div class="container custom-grid">
+      <div>
+        <h2>Custom Jewellery, Made Just for You</h2>
+        <p>
+          Have a design in mind or a reference from Pinterest/Instagram? Share it with us and we
+          will craft a bespoke piece that matches your outfit, personality and budget.
+        </p>
+        <ol class="custom-steps">
+          <li>Share your idea, references or outfit photos.</li>
+          <li>We create design concepts and CAD sketches.</li>
+          <li>Finalise design, stones and metal.</li>
+          <li>Handcrafting & final jewellery reveal.</li>
+        </ol>
+      </div>
+
+      <form id="customForm" class="contact-form">
+        <h3>Custom Jewellery Inquiry</h3>
+        <div class="form-group">
+          <label for="customName">Name</label>
+          <input id="customName" name="name" type="text" required />
+        </div>
+        <div class="form-group">
+          <label for="customPhone">Phone (WhatsApp)</label>
+          <input id="customPhone" name="phone" type="tel" required />
+        </div>
+        <div class="form-group">
+          <label for="customBudget">Budget Range</label>
+          <input id="customBudget" name="budget" type="text" placeholder="e.g. 1–3 Lakh" />
+        </div>
+        <div class="form-group">
+          <label for="customMessage">Idea / Requirements</label>
+          <textarea
+            id="customMessage"
+            name="message"
+            rows="4"
+            placeholder="Share outfit colour, style preference or reference."
+          ></textarea>
+        </div>
+        <button type="submit" class="btn primary full-width">Send to WhatsApp</button>
+        <p class="form-note">
+          On submit, your details will open directly in WhatsApp chat with us.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Gallery</h2>
+        <p>A glimpse of our bridal shoots, showroom and handcrafted pieces.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <img src="assets/gallery-1.jpg" alt="Bridal photoshoot" />
+        <img src="assets/gallery-2.jpg" alt="Necklace closeup" />
+        <img src="assets/gallery-3.jpg" alt="Earrings detail" />
+        <img src="assets/gallery-4.jpg" alt="Showroom interior" />
+        <img src="assets/gallery-5.jpg" alt="Bangle stack" />
+        <img src="assets/gallery-6.jpg" alt="Bridal jewellery set" />
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Brides Say</h2>
+        <p>Real stories from weddings and special occasions.</p>
+      </div>
+
+      <div class="testimonial-grid">
+        <article class="testimonial-card">
+          <p class="testimonial-text">
+            “They designed my complete bridal jewellery as per my lehenga colours. Everyone
+            complimented the set. The finish and detailing were stunning.”
+          </p>
+          <p class="testimonial-author">– Priya, Jaipur</p>
+        </article>
+
+        <article class="testimonial-card">
+          <p class="testimonial-text">
+            “As an NRI, I did most of the selection over video call. The team was very patient,
+            transparent and delivered exactly what was promised.”
+          </p>
+          <p class="testimonial-author">– Neha, Dubai</p>
+        </article>
+
+        <article class="testimonial-card">
+          <p class="testimonial-text">
+            “Their Polki collection is truly royal. I ended up buying more than I planned!”
+          </p>
+          <p class="testimonial-author">– Rohan & Aarti, Mumbai</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Answers to common questions about pricing, custom work and NRI orders.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you share prices online?
+            <span>+</span>
+          </button>
+          <div class="faq-answer">
+            Since gold and diamond prices fluctuate, we share pricing and offers directly on
+            WhatsApp after understanding your requirements.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I customise a design I saw on Instagram/Pinterest?
+            <span>+</span>
+          </button>
+          <div class="faq-answer">
+            Yes, you can share references and we will suggest similar or inspired designs
+            according to your budget and timeline.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you take NRI or outstation orders?
+            <span>+</span>
+          </button>
+          <div class="faq-answer">
+            Absolutely. We regularly work with NRI clients using video calls, detailed photos and
+            secure shipping partners.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container contact-grid">
+      <div>
+        <h2>Visit Us or Enquire on WhatsApp</h2>
+        <p>
+          Share your details and we’ll respond on WhatsApp with designs, prices and appointment
+          options.
+        </p>
+        <ul class="contact-details">
+          <li><strong>Location:</strong> Johri Bazar, Jaipur</li>
+          <li><strong>Timings:</strong> 11:00 AM – 8:00 PM</li>
+        </ul>
+        <a href="#" class="btn ghost" onclick="openDirectWhatsApp(); return false;">
+          Open WhatsApp Chat
+        </a>
+      </div>
+
+      <form id="inquiryForm" class="contact-form">
+        <h3>Quick Inquiry</h3>
+        <div class="form-group">
+          <label for="inqName">Name</label>
+          <input id="inqName" name="name" type="text" required />
+        </div>
+        <div class="form-group">
+          <label for="inqPhone">Phone (WhatsApp)</label>
+          <input id="inqPhone" name="phone" type="tel" required />
+        </div>
+        <div class="form-group">
+          <label for="inqInterest">Interested In</label>
+          <input
+            id="inqInterest"
+            name="interest"
+            type="text"
+            placeholder="e.g. Bridal Polki, Diamond sets"
+          />
+        </div>
+        <div class="form-group">
+          <label for="inqBudget">Budget Range</label>
+          <input id="inqBudget" name="budget" type="text" placeholder="e.g. 2–5 Lakh" />
+        </div>
+        <div class="form-group">
+          <label for="inqMessage">Message</label>
+          <textarea
+            id="inqMessage"
+            name="message"
+            rows="3"
+            placeholder="Share your wedding date, style preference, etc."
+          ></textarea>
+        </div>
+        <button type="submit" class="btn primary full-width">Send to WhatsApp</button>
+        <p class="form-note">
+          Your details will be pre-filled in WhatsApp so you can directly start the chat.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Royal Jewels Emporium</h4>
+        <p>Luxury jewellery crafted in Jaipur for weddings, NRIs and special occasions.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#collections">Collections</a>
+        <a href="#custom">Custom</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-meta">
+        <p>© <span id="year"></span> Royal Jewels Emporium. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
